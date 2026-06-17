@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gokoverse | Kisisel Web Sitesi</title>
+    <meta
+      name="description"
+      content="Gokoverse: fikirler, projeler, notlar ve dijital uretimler icin kisisel web sitesi."
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Gokoverse ana sayfa">
+        <span class="brand-mark">G</span>
+        <span>Gokoverse</span>
+      </a>
+      <nav class="nav" aria-label="Ana menu">
+        <a href="#about">Hakkimda</a>
+        <a href="#work">Projeler</a>
+        <a href="#notes">Notlar</a>
+        <a href="#contact">Iletisim</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Kisisel web sitesi</p>
+          <h1>Gokoverse</h1>
+          <p class="lead">
+            Teknoloji, tasarim, uretim ve merak ettigim seyler icin kurdugum
+            kisisel alan.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">Projeleri gor</a>
+            <a class="button secondary" href="#contact">Iletisime gec</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Gokoverse gorsel alani">
+          <img src="assets/gokoverse-visual.svg" alt="" />
+        </div>
+      </section>
+
+      <section id="about" class="section split">
+        <div>
+          <p class="section-kicker">Hakkimda</p>
+          <h2>Merak ettigim fikirleri urune, notlara ve deneylere donusturuyorum.</h2>
+        </div>
+        <div class="copy-stack">
+          <p>
+            Burasini zamanla yaptigim projeleri, ogrendiklerimi, denemelerimi
+            ve paylasmak istedigim notlari topladigim bir merkez haline
+            getirecegim.
+          </p>
+          <p>
+            Ilk surum sade tutuldu: hizli acilir, mobilde rahat okunur ve
+            Vercel uzerinden kolayca yayinlanir.
+          </p>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-heading">
+          <p class="section-kicker">Projeler</p>
+          <h2>Uzerinde calistiklarim</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-number">01</span>
+            <h3>Kisisel Site</h3>
+            <p>gokoverse.com icin hizli, sade ve genisletilebilir bir baslangic.</p>
+          </article>
+          <article class="project-card">
+            <span class="project-number">02</span>
+            <h3>Notlar</h3>
+            <p>Ogrendigim konular, kisa fikirler ve ileride buyuyecek yazilar.</p>
+          </article>
+          <article class="project-card">
+            <span class="project-number">03</span>
+            <h3>Deneyler</h3>
+            <p>Araclar, prototipler ve internette yasayabilecek kucuk fikirler.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="notes" class="section notes-band">
+        <div class="section-heading">
+          <p class="section-kicker">Notlar</p>
+          <h2>Yakin zamanda</h2>
+        </div>
+        <div class="note-list">
+          <a href="#contact">
+            <span>01</span>
+            <strong>Siteyi yayina alma</strong>
+            <small>GitHub ve Vercel baglantisi</small>
+          </a>
+          <a href="#contact">
+            <span>02</span>
+            <strong>Ilk projeleri ekleme</strong>
+            <small>Kisa aciklamalar ve linkler</small>
+          </a>
+          <a href="#contact">
+            <span>03</span>
+            <strong>Kisisel kimligi netlestirme</strong>
+            <small>Renkler, metinler ve gorsel ton</small>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <p class="section-kicker">Iletisim</p>
+        <h2>Yeni fikirler ve projeler icin buradayim.</h2>
+        <div class="contact-links">
+          <a href="mailto:hello@gokoverse.com">hello@gokoverse.com</a>
+          <a href="https://github.com/Gokoverse">GitHub</a>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; <span id="year"></span> Gokoverse</span>
+      <a href="#top">Yukari don</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
