@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1200" role="img" aria-label="Soyut Gokoverse gorseli">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7f5ef"/>
+      <stop offset=".47" stop-color="#dce9e5"/>
+      <stop offset="1" stop-color="#f3d7bf"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#12151f" stroke-opacity=".08" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="960" height="1200" fill="url(#sky)"/>
+  <rect width="960" height="1200" fill="url(#grid)"/>
+  <circle cx="700" cy="230" r="112" fill="#d96f55"/>
+  <circle cx="246" cy="412" r="176" fill="#2f7d6b" opacity=".92"/>
+  <path d="M164 820c120-166 286-249 498-249 82 0 158 13 228 39v590H0V996c55-46 110-105 164-176Z" fill="#12151f"/>
+  <path d="M0 990c132-99 261-149 389-149 180 0 288 85 433 85 45 0 91-9 138-27v301H0V990Z" fill="#315f8f"/>
+  <path d="M92 690h356v126H92z" fill="#f7f5ef"/>
+  <path d="M144 638h354v62H144z" fill="#c6922c"/>
+  <path d="M520 318h204v204H520z" fill="#f7f5ef"/>
+  <path d="M565 364h114v114H565z" fill="#12151f"/>
+  <path d="M202 732h190v28H202z" fill="#12151f"/>
+  <path d="M202 776h122v28H202z" fill="#d96f55"/>
+  <path d="M108 184c78-51 156-76 235-76 64 0 125 17 184 50" fill="none" stroke="#12151f" stroke-width="20" stroke-linecap="round"/>
+</svg>
