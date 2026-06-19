@@ -47,8 +47,9 @@ function renderLatestVideo() {
   if (!embedUrl) {
     slot.innerHTML = `
       <div>
-        <strong>Yakinda</strong>
-        <p>Son YouTube videosu eklendiginde burada gorunecek.</p>
+        <span class="youtube-mark" aria-hidden="true"></span>
+        <strong>YouTube</strong>
+        <p>Latest video will appear here soon.</p>
       </div>
     `;
     return;
@@ -117,12 +118,26 @@ function renderIconCloud() {
   `;
 }
 
+function storeLabel(label) {
+  const isPlay = label.toLowerCase().includes("play");
+  const logo = isPlay ? "▶" : "●";
+  const storeName = isPlay ? "Google Play" : "App Store";
+  return `
+    <span class="store-button-row">
+      <span class="store-logo">${logo}</span>
+      <span>
+        <span class="store-kicker">Download on the</span>
+        <span class="store-main">${storeName}</span>
+      </span>
+    </span>
+  `;
+}
 function storeButton(label, url) {
   if (!url) {
-    return `<span class="store-button is-disabled">${label}: Yakinda</span>`;
+    return `<span class="store-button is-disabled">${storeLabel(label)}</span>`;
   }
 
-  return `<a class="store-button" href="${url}" target="_blank" rel="noreferrer">${label}</a>`;
+  return `<a class="store-button" href="${url}" target="_blank" rel="noreferrer">${storeLabel(label)}</a>`;
 }
 
 function renderAppDetail() {
@@ -165,7 +180,7 @@ function renderUpdates() {
       ${renderIcon(app)}
       <div>
         <small>${shipped.label}</small>
-        <p><strong>${app.name}</strong> ${shipped.text.replace(app.name, "")}</p>
+        <p>${shipped.text}</p>
       </div>
     </div>
   `;
@@ -189,3 +204,4 @@ renderAppsList();
 renderIconCloud();
 renderAppDetail();
 renderUpdates();
+
