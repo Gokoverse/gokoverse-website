@@ -407,3 +407,119 @@ h3 {
   .store-button { justify-content: center; width: 100%; }
 }
 
+
+.social-main {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+}
+.social-icon {
+  align-items: center;
+  border-radius: 7px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  font-weight: 950;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+.icon-x {
+  background: #f4f1ea;
+  color: #080c16;
+}
+.icon-instagram {
+  background:
+    radial-gradient(circle at 32% 28%, #ffd76f 0 10%, transparent 11%),
+    linear-gradient(135deg, #6d4cff, #d93d86 48%, #ff9f38);
+  position: relative;
+}
+.icon-instagram::after {
+  border: 2px solid #fff;
+  border-radius: 7px;
+  content: "";
+  height: 11px;
+  width: 11px;
+}
+.icon-youtube {
+  background: #ff0033;
+  position: relative;
+}
+.icon-youtube::before {
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #fff;
+  border-top: 5px solid transparent;
+  content: "";
+  margin-left: 2px;
+}
+.icon-facebook {
+  background: #1877f2;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+.icon-tiktok {
+  background: #070707;
+  color: #fff;
+  text-shadow: -1px 0 #25f4ee, 1px 0 #fe2c55;
+}
+.icon-appstore {
+  background: #0a84ff;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+.icon-playstore {
+  background: #111827;
+  overflow: hidden;
+  position: relative;
+}
+.icon-playstore::before {
+  border-bottom: 8px solid transparent;
+  border-left: 13px solid #34a853;
+  border-top: 8px solid transparent;
+  content: "";
+  margin-left: 3px;
+}
+.icon-playstore::after {
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #fbbc04;
+  border-top: 5px solid transparent;
+  content: "";
+  margin-left: -13px;
+}
+.icon-email {
+  background: #f4f1ea;
+  color: #080c16;
+}
+.link-arrow {
+  color: var(--yellow) !important;
+  font-size: 1.2rem !important;
+  font-weight: 900;
+}
+.store-button {
+  min-width: 150px;
+}
+.store-button-row {
+  gap: 9px;
+}
+.store-logo.apple-logo {
+  font-size: 1.45rem;
+  line-height: 1;
+}
+.store-logo.play-logo {
+  align-items: center;
+  display: inline-flex;
+  height: 22px;
+  justify-content: center;
+  position: relative;
+  width: 22px;
+}
+.store-logo.play-logo::before {
+  border-bottom: 11px solid transparent;
+  border-left: 18px solid currentColor;
+  border-top: 11px solid transparent;
+  content: "";
+}
+.store-main {
+  display: block;
+}
