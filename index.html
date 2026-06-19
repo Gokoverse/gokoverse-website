@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gokoverse | Producks, Apps and Notes</title>
+    <title>Gokoverse | Mobile Apps</title>
     <meta
       name="description"
-      content="Gokoverse: uygulamalar, videolar, sosyal linkler ve dijital uretimler icin kisisel merkez."
+      content="Gokoverse mobil uygulamalari, sosyal linkleri ve son gelismeleri icin kisisel merkez."
     />
-    <meta name="theme-color" content="#f6f2ea" />
+    <meta name="theme-color" content="#080c16" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -25,8 +25,8 @@
             <p class="eyebrow">Kisisel merkez</p>
             <h1>Gokoverse</h1>
             <p>
-              Uygulamalar, videolar, notlar ve dijital uretimler icin kurdugum
-              canli alan. Yeni isler eklendikce burasi da buyuyecek.
+              Mobil uygulamalar, videolar, notlar ve dijital uretimler icin
+              kurdugum canli alan.
             </p>
           </section>
 
@@ -60,18 +60,34 @@
         </div>
       </aside>
 
-      <section class="content-panel" aria-label="Gokoverse icerikleri">
+      <section class="content-panel" aria-label="Gokoverse uygulamalari">
         <header class="content-header">
-          <p class="eyebrow">Apps, videos, experiments</p>
+          <p class="eyebrow">Apps, games, tools</p>
           <h2>producks</h2>
           <p>
-            Yayindaki, hazirlanan ve yakinda eklenecek uygulamalar burada
-            listelenecek. Her kart gorsel, video, App Store ve Play Store
-            linkleriyle genisletilebilir.
+            Gokoverse altinda yayinlanan ve hazirlanan mobil uygulamalar.
+            Bir uygulama secildiginde detaylari sagdaki panelde acilir.
           </p>
         </header>
 
-        <div id="producks-grid" class="producks-grid"></div>
+        <section class="apps-stage" aria-label="Mobile apps">
+          <div class="apps-list-wrap">
+            <div class="list-heading">
+              <span id="apps-count">0 apps</span>
+              <small>Mobile producks</small>
+            </div>
+            <div id="apps-list" class="apps-list"></div>
+          </div>
+
+          <div class="icon-cloud" id="icon-cloud" aria-hidden="true"></div>
+
+          <article id="app-detail" class="app-detail" aria-live="polite"></article>
+        </section>
+
+        <section class="updates-section" aria-label="Son gelismeler">
+          <div id="updates-strip" class="updates-strip"></div>
+          <div id="updates-grid" class="updates-grid"></div>
+        </section>
       </section>
     </main>
 
