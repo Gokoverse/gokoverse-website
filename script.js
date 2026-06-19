@@ -120,15 +120,13 @@ function renderIconCloud() {
 
 function storeLabel(label) {
   const isPlay = label.toLowerCase().includes("play");
-  const logo = isPlay ? "▶" : "●";
+  const logoClass = isPlay ? "play-logo" : "apple-logo";
+  const logo = isPlay ? "" : "●";
   const storeName = isPlay ? "Google Play" : "App Store";
   return `
     <span class="store-button-row">
-      <span class="store-logo">${logo}</span>
-      <span>
-        <span class="store-kicker">Download on the</span>
-        <span class="store-main">${storeName}</span>
-      </span>
+      <span class="store-logo ${logoClass}">${logo}</span>
+      <span class="store-main">${storeName}</span>
     </span>
   `;
 }
@@ -204,4 +202,5 @@ renderAppsList();
 renderIconCloud();
 renderAppDetail();
 renderUpdates();
+
 
