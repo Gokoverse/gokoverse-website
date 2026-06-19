@@ -1,133 +1,81 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="tr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gokoverse | Kisisel Web Sitesi</title>
+    <title>Gokoverse | Producks, Apps and Notes</title>
     <meta
       name="description"
-      content="Gokoverse: fikirler, projeler, notlar ve dijital uretimler icin kisisel web sitesi."
+      content="Gokoverse: uygulamalar, videolar, sosyal linkler ve dijital uretimler icin kisisel merkez."
     />
-    <meta name="theme-color" content="#0f172a" />
+    <meta name="theme-color" content="#f6f2ea" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Gokoverse ana sayfa">
-        <span class="brand-mark">G</span>
-        <span>Gokoverse</span>
-      </a>
-      <nav class="nav" aria-label="Ana menu">
-        <a href="#about">Hakkimda</a>
-        <a href="#work">Projeler</a>
-        <a href="#notes">Notlar</a>
-        <a href="#contact">Iletisim</a>
-      </nav>
-    </header>
+    <main class="shell">
+      <aside class="profile-panel" aria-label="Gokoverse profil alani">
+        <div class="profile-sticky">
+          <a class="brand" href="#top" aria-label="Gokoverse ana sayfa">
+            <span class="brand-mark">G</span>
+            <span>Gokoverse</span>
+          </a>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Kisisel web sitesi</p>
-          <h1>Gokoverse</h1>
-          <p class="lead">
-            Teknoloji, tasarim, uretim ve merak ettigim seyler icin kurdugum
-            kisisel alan.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#work">Projeleri gor</a>
-            <a class="button secondary" href="#contact">Iletisime gec</a>
-          </div>
-        </div>
+          <section class="intro" id="top">
+            <p class="eyebrow">Kisisel merkez</p>
+            <h1>Gokoverse</h1>
+            <p>
+              Uygulamalar, videolar, notlar ve dijital uretimler icin kurdugum
+              canli alan. Yeni isler eklendikce burasi da buyuyecek.
+            </p>
+          </section>
 
-        <div class="hero-visual" aria-label="Gokoverse gorsel alani">
-          <img src="gokoverse-visual.svg" alt="" />
-        </div>
-      </section>
+          <nav class="social-links" aria-label="Sosyal ve magaza linkleri">
+            <a href="https://x.com/GokoVerseCom" target="_blank" rel="noreferrer">
+              <span>X</span>
+              <small>@GokoVerseCom</small>
+            </a>
+            <a href="https://www.instagram.com/gokoversecom" target="_blank" rel="noreferrer">
+              <span>Instagram</span>
+              <small>@gokoversecom</small>
+            </a>
+            <a href="mailto:gokoversecom@gmail.com">
+              <span>Email</span>
+              <small>gokoversecom@gmail.com</small>
+            </a>
+            <span class="soon-link"><span>YouTube</span><small>Yakinda</small></span>
+            <span class="soon-link"><span>Facebook</span><small>Yakinda</small></span>
+            <span class="soon-link"><span>TikTok</span><small>Yakinda</small></span>
+            <span class="soon-link"><span>App Store</span><small>Yakinda</small></span>
+            <span class="soon-link"><span>Play Store</span><small>Yakinda</small></span>
+          </nav>
 
-      <section id="about" class="section split">
-        <div>
-          <p class="section-kicker">Hakkimda</p>
-          <h2>Merak ettigim fikirleri urune, notlara ve deneylere donusturuyorum.</h2>
+          <section class="latest-video" aria-label="Son YouTube videosu">
+            <div class="section-label">
+              <span>Latest video</span>
+              <small>YouTube</small>
+            </div>
+            <div id="latest-video-slot" class="video-placeholder"></div>
+          </section>
         </div>
-        <div class="copy-stack">
+      </aside>
+
+      <section class="content-panel" aria-label="Gokoverse icerikleri">
+        <header class="content-header">
+          <p class="eyebrow">Apps, videos, experiments</p>
+          <h2>producks</h2>
           <p>
-            Burasini zamanla yaptigim projeleri, ogrendiklerimi, denemelerimi
-            ve paylasmak istedigim notlari topladigim bir merkez haline
-            getirecegim.
+            Yayindaki, hazirlanan ve yakinda eklenecek uygulamalar burada
+            listelenecek. Her kart gorsel, video, App Store ve Play Store
+            linkleriyle genisletilebilir.
           </p>
-          <p>
-            Ilk surum sade tutuldu: hizli acilir, mobilde rahat okunur ve
-            Vercel uzerinden kolayca yayinlanir.
-          </p>
-        </div>
-      </section>
+        </header>
 
-      <section id="work" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Projeler</p>
-          <h2>Uzerinde calistiklarim</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <span class="project-number">01</span>
-            <h3>Kisisel Site</h3>
-            <p>gokoverse.com icin hizli, sade ve genisletilebilir bir baslangic.</p>
-          </article>
-          <article class="project-card">
-            <span class="project-number">02</span>
-            <h3>Notlar</h3>
-            <p>Ogrendigim konular, kisa fikirler ve ileride buyuyecek yazilar.</p>
-          </article>
-          <article class="project-card">
-            <span class="project-number">03</span>
-            <h3>Deneyler</h3>
-            <p>Araclar, prototipler ve internette yasayabilecek kucuk fikirler.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="notes" class="section notes-band">
-        <div class="section-heading">
-          <p class="section-kicker">Notlar</p>
-          <h2>Yakin zamanda</h2>
-        </div>
-        <div class="note-list">
-          <a href="#contact">
-            <span>01</span>
-            <strong>Siteyi yayina alma</strong>
-            <small>GitHub ve Vercel baglantisi</small>
-          </a>
-          <a href="#contact">
-            <span>02</span>
-            <strong>Ilk projeleri ekleme</strong>
-            <small>Kisa aciklamalar ve linkler</small>
-          </a>
-          <a href="#contact">
-            <span>03</span>
-            <strong>Kisisel kimligi netlestirme</strong>
-            <small>Renkler, metinler ve gorsel ton</small>
-          </a>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact">
-        <p class="section-kicker">Iletisim</p>
-        <h2>Yeni fikirler ve projeler icin buradayim.</h2>
-        <div class="contact-links">
-          <a href="mailto:hello@gokoverse.com">hello@gokoverse.com</a>
-          <a href="https://github.com/Gokoverse">GitHub</a>
-          <a href="https://www.linkedin.com/">LinkedIn</a>
-        </div>
+        <div id="producks-grid" class="producks-grid"></div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <span>&copy; <span id="year"></span> Gokoverse</span>
-      <a href="#top">Yukari don</a>
-    </footer>
-
+    <script src="data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
