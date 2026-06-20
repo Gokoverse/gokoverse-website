@@ -560,3 +560,55 @@ h3 {
   font-size: 1rem;
   font-weight: 900;
 }
+
+@media (max-width: 430px) {
+  body {
+    overflow-x: hidden;
+  }
+  .brand {
+    max-width: 100%;
+  }
+  .brand span:last-child {
+    overflow-wrap: anywhere;
+  }
+  h1 {
+    font-size: clamp(1.85rem, 12vw, 2.65rem);
+  }
+  h2 {
+    font-size: clamp(2.25rem, 14vw, 3.35rem);
+  }
+  .content-header p,
+  .intro p {
+    font-size: 0.94rem;
+  }
+  .apps-stage {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 18px 20px;
+  }
+  .list-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .app-detail {
+    padding: 20px;
+  }
+  .detail-head {
+    grid-template-columns: 52px 1fr;
+  }
+  .detail-head img,
+  .detail-head .app-icon-fallback {
+    height: 52px;
+    width: 52px;
+  }
+  .updates-section {
+    margin-top: 28px;
+  }
+  .update-card {
+    min-height: auto;
+  }
+}
