@@ -612,3 +612,29 @@ h3 {
     min-height: auto;
   }
 }
+.shipped-item {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+}
+
+.shipped-item > div {
+  flex: 1;
+}
+
+.shipped-item strong {
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.shipped-arrow {
+  color: var(--yellow);
+  font-size: 1.35rem;
+  font-weight: 900;
+  margin-left: auto;
+}
+
+.shipped-item:hover strong,
+.shipped-item:hover .shipped-arrow {
+  color: var(--yellow);
+}
