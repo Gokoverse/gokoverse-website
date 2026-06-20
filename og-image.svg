@@ -1,0 +1,27 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Gokoverse social preview">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#080c16"/>
+      <stop offset="1" stop-color="#121825"/>
+    </linearGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0v72" fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="955" cy="160" r="92" fill="#f4cc3f" opacity=".95"/>
+  <circle cx="1030" cy="475" r="150" fill="#35d184" opacity=".22"/>
+  <rect x="80" y="82" width="82" height="82" rx="20" fill="#f4f1ea"/>
+  <text x="121" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="900" fill="#080c16">G</text>
+  <text x="80" y="265" font-family="Arial, sans-serif" font-size="104" font-weight="900" fill="#f4f1ea">Gokoverse</text>
+  <text x="84" y="332" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#9da0ad">Mobile apps, product notes, and digital experiments.</text>
+  <text x="84" y="430" font-family="Arial, sans-serif" font-size="66" font-weight="900" fill="#f4f1ea">Producks</text>
+  <text x="86" y="482" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#f4cc3f">www.gokoverse.com</text>
+  <rect x="770" y="260" width="126" height="126" rx="30" fill="#1a2a4a"/>
+  <text x="833" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#f4f1ea">VS</text>
+  <rect x="915" y="334" width="94" height="94" rx="24" fill="#253b2f"/>
+  <text x="962" y="394" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#35d184">S</text>
+  <rect x="700" y="410" width="104" height="104" rx="26" fill="#33224a"/>
+  <text x="752" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#d786ff">AS</text>
+</svg>
