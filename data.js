@@ -66,9 +66,10 @@ window.gokoverseData = {
   ],
   updates: {
     shipped: {
-      appId: "almost-soon",
+      appId: "very-soon",
       label: "Recently shipped",
-      text: "Very soon, ready on the App Store.",
+      text: "is almost ready for the App Store.",
+      url: "https://x.com/GokoVerseCom",
     },
     cards: [
       {
@@ -88,3 +89,4 @@ window.gokoverseData = {
     ],
   },
 };
+
