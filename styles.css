@@ -523,3 +523,40 @@ h3 {
 .store-main {
   display: block;
 }
+
+.logo-tile {
+  background: #f4f1ea;
+  border: 0;
+  padding: 5px;
+}
+.logo-tile img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+.soon-link .logo-tile {
+  opacity: 0.68;
+}
+.soon-link .logo-tile:has(img[src*="tiktok"]) {
+  background: #111;
+}
+.store-button {
+  background: #050505;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #fff;
+  min-width: 168px;
+}
+.store-button.is-disabled {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.58);
+}
+.store-button-row img {
+  height: 24px;
+  object-fit: contain;
+  width: 24px;
+}
+.store-main {
+  font-size: 1rem;
+  font-weight: 900;
+}
