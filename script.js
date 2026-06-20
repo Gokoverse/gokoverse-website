@@ -174,15 +174,18 @@ function renderUpdates() {
   const shipped = window.gokoverseData.updates.shipped;
   const app = window.gokoverseData.apps.find((item) => item.id === shipped.appId) || window.gokoverseData.apps[0];
 
-  strip.innerHTML = `
-    <div class="shipped-item">
-      ${renderIcon(app)}
-      <div>
-        <small>${shipped.label}</small>
-        <p>${shipped.text}</p>
-      </div>
+  const shippedContent = `
+    ${renderIcon(app)}
+    <div>
+      <small>${shipped.label}</small>
+      <p><strong>${app.name}</strong> ${shipped.text}</p>
     </div>
+    <span class="shipped-arrow">›</span>
   `;
+
+  strip.innerHTML = shipped.url
+    ? `<a class="shipped-item" href="${shipped.url}" target="_blank" rel="noreferrer">${shippedContent}</a>`
+    : `<div class="shipped-item">${shippedContent}</div>`;
 
   grid.innerHTML = window.gokoverseData.updates.cards
     .map(
@@ -203,6 +206,7 @@ renderAppsList();
 renderIconCloud();
 renderAppDetail();
 renderUpdates();
+
 
 
 
