@@ -120,12 +120,13 @@ function renderIconCloud() {
 
 function storeLabel(label) {
   const isPlay = label.toLowerCase().includes("play");
-  const logoClass = isPlay ? "play-logo" : "apple-logo";
-  const logo = isPlay ? "" : "●";
+  const logoUrl = isPlay
+    ? "https://cdn.simpleicons.org/googleplay/ffffff"
+    : "https://cdn.simpleicons.org/appstore/ffffff";
   const storeName = isPlay ? "Google Play" : "App Store";
   return `
     <span class="store-button-row">
-      <span class="store-logo ${logoClass}">${logo}</span>
+      <img src="${logoUrl}" alt="" />
       <span class="store-main">${storeName}</span>
     </span>
   `;
@@ -202,5 +203,6 @@ renderAppsList();
 renderIconCloud();
 renderAppDetail();
 renderUpdates();
+
 
 
